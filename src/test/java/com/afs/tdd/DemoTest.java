@@ -15,4 +15,15 @@ class MarsRoverTest {
 
         assertEquals("0 1 N", result);
     }
+
+    @Test
+    void should_locationY_minus_one_when_execute_given_direction_S_and_command_M(){
+        MarsRover marsRover = new MarsRover(0,0,"S");
+        String command = "M";
+
+        marsRover.executeCommand(command);
+        String result = marsRover.getStatus();
+
+        assertEquals("0 -1 S", result);
+    }
 }
