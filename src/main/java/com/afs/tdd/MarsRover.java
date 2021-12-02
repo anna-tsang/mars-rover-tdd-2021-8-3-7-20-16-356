@@ -22,14 +22,14 @@ public class MarsRover {
         this.direction = direction;
     }
 
-//    public void executeCommands(String commands) {
-//        for (char command : commands.toCharArray()){
-//            executeCommand(command);
-//        }
-//    }
+    public void executeCommands(String commands) {
+        for (char command : commands.toCharArray()){
+            executeCommand(command);
+        }
+    }
 
     private void executeCommand(char command) {
-        //String commandString = Character.toString(command);
+        String commandString = Character.toString(command);
 
         if(commandString.equals(MOVE_FORWARD)){
             move();
