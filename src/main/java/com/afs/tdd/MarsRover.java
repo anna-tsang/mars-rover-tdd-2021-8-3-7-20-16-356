@@ -16,8 +16,15 @@ public class MarsRover {
             move();
         } else if(command.equals("L")){
             left();
+        } else if(command.equals("R")){
+            right();
         }
     }
+
+    private void right() {
+        this.direction = "E";
+    }
+
 
     private void left(){
         if(direction.equals("N")){
