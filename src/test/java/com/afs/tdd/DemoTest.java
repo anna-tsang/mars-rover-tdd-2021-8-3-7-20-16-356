@@ -125,4 +125,15 @@ class MarsRoverTest {
 
         assertEquals("0 0 S", result);
     }
+
+    @Test
+    void should_direction_change_right_when_execute_given_direction_W_and_command_R(){
+        MarsRover marsRover = new MarsRover(0,0,"W");
+        String command = "R";
+
+        marsRover.executeCommand(command);
+        String result = marsRover.getStatus();
+
+        assertEquals("0 0 N", result);
+    }
 }
