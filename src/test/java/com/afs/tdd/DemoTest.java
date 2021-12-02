@@ -37,4 +37,15 @@ class MarsRoverTest {
 
         assertEquals("1 0 E", result);
     }
+
+    @Test
+    void should_locationX_minus_one_when_execute_given_direction_W_and_command_M(){
+        MarsRover marsRover = new MarsRover(0,0,"W");
+        String command = "M";
+
+        marsRover.executeCommand(command);
+        String result = marsRover.getStatus();
+
+        assertEquals("-1 0 W", result);
+    }
 }
