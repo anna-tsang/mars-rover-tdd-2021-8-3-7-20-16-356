@@ -1,13 +1,21 @@
 package com.afs.tdd;
 
 public class MarsRover {
-    private final String locationX;
-    private final String locationY;
-    private final String direction;
+    private int locationX;
+    private int locationY;
+    private String direction;
 
-    public MarsRover(String locationX, String locationY, String direction){
+    public MarsRover(int locationX, int locationY, String direction){
         this.locationX = locationX;
         this.locationY = locationY;
         this.direction = direction;
+    }
+
+    public void executeCommand(String command) {
+        locationY++;
+    }
+
+    public String getStatus() {
+        return String.format("%d %d %s",locationX, locationY, direction);
     }
 }
