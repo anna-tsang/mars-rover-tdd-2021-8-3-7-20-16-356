@@ -81,4 +81,15 @@ class MarsRoverTest {
 
         assertEquals("0 0 N", result);
     }
+
+    @Test
+    void should_direction_change_left_when_execute_given_direction_W_and_command_L(){
+        MarsRover marsRover = new MarsRover(0,0,"W");
+        String command = "L";
+
+        marsRover.executeCommand(command);
+        String result = marsRover.getStatus();
+
+        assertEquals("0 0 S", result);
+    }
 }
