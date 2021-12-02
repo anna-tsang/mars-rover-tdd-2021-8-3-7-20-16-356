@@ -12,7 +12,15 @@ public class MarsRover {
     }
 
     public void executeCommand(String command) {
-        locationY++;
+        move();
+    }
+
+    private void move(){
+        if(this.direction.equals("N")){
+            locationY++;
+        } else if (this.direction.equals("S")){
+            locationY--;
+        }
     }
 
     public String getStatus() {
