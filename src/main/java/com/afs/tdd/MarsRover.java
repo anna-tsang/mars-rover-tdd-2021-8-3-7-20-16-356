@@ -12,7 +12,15 @@ public class MarsRover {
     }
 
     public void executeCommand(String command) {
-        move();
+        if(command.equals("M")){
+            move();
+        } else if(command.equals("L")){
+            left();
+        }
+    }
+
+    private void left(){
+        this.direction = "W";
     }
 
     private void move(){
