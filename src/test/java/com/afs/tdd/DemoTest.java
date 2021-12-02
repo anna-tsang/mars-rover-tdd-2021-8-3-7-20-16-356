@@ -28,7 +28,7 @@ class MarsRoverTest {
     }
 
     @Test
-    void should_locationY_minus_one_when_execute_given_direction_E_and_command_M(){
+    void should_locationX_add_one_when_execute_given_direction_E_and_command_M(){
         MarsRover marsRover = new MarsRover(0,0,"E");
         String command = "M";
 
