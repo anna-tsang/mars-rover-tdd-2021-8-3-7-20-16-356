@@ -20,7 +20,12 @@ public class MarsRover {
     }
 
     private void left(){
-        this.direction = "W";
+        if(direction.equals("N")){
+            this.direction = "W";
+        } else if (direction.equals("S")){
+            this.direction = "E";
+        }
+
     }
 
     private void move(){
