@@ -67,13 +67,13 @@ public class MarsRover {
     }
 
     private void move(){
-        if(this.direction.equals("N")){
+        if(this.direction.equals(NORTH)){
             locationY++;
-        } else if (this.direction.equals("S")){
+        } else if (this.direction.equals(SOUTH)){
             locationY--;
-        } else if (this.direction.equals("E")){
+        } else if (this.direction.equals(EAST)){
             locationX++;
-        } else if (this.direction.equals("W")){
+        } else if (this.direction.equals(WEST)){
             locationX--;
         }
     }
